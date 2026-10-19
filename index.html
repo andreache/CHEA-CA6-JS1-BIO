@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="author" content="Andrea Che">
+
+  <title>Bear Ninja Hunter</title>
+</head>
+
+<body>
+
+  <p id="demo"></p>
+
+  <script>
+
+    //Introduce player to the game
+    let playerName = prompt('Welcome to Bear Hunter Ninja! Please enter your name to get started:');
+    //Add a personalized message
+    alert(`Hi ${playerName} Let\'s Play!!`);
+    //Ask player to choose Bear, Ninja, or Hunter
+    let playerChoice = prompt("Who are you: Bear, Ninja, or Hunter?");
+    //Set computer choice to Bear
+    const computerChoice = "Bear";
+    //Final game message// 
+    let gameMessage = `${playerName}, You picked ${playerChoice}! The computer picked ${computerChoice}!`;
+    //display game message in console
+    console.log(gameMessage);
+    //display game message on webpage
+    document.getElementById("demo").innerHTML = gameMessage;
+  </script>
+</body>
+
+</html>
